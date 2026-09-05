@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Customer Messages - Mini Store</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <script>
+
+    const adminToken =
+        localStorage.getItem("adminToken");
+
+    if (!adminToken) {
+
+        window.location.href =
+            "admin-login.html";
+    }
+
+</script>
+
+    <nav>
+
+        <div class="logo">
+            Mini Store Admin
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">Store</a>
+
+            <a href="products.html">Products</a>
+
+            <a href="admin-orders.html">Orders</a>
+
+            <a href="admin-messages.html">Messages</a>
+
+        </div>
+
+    </nav>
+
+    <section class="admin-section">
+
+        <div class="admin-header">
+
+            <div>
+
+                <h1>Customer Messages</h1>
+
+                <p>
+                    View messages and inquiries from your customers.
+                </p>
+
+            </div>
+
+            <button onclick="loadCustomerMessages()">
+                Refresh Messages
+            </button>
+
+        </div>
+
+        <div id="messages-container">
+
+            <p class="loading-orders">
+                Loading customer messages...
+            </p>
+
+        </div>
+
+    </section>
+
+    <script src="js/app.js"></script>
+    <script>
+    loadCustomerMessages();
+</script>
+
+</body>
+
+</html>

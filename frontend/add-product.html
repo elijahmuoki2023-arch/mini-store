@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add Product - Mini Store</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">Mini Store</div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart</a>
+            <a href="add-product.html">Add Product</a>
+        </div>
+    </nav>
+
+    <section class="products-section">
+
+        <h1>Add New Product</h1>
+
+        <form id="product-form">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Product name"
+                required
+            >
+
+            <br><br>
+
+            <input
+                type="text"
+                id="description"
+                placeholder="Product description"
+                required
+            >
+
+            <br><br>
+
+            <input
+                type="number"
+                id="price"
+                placeholder="Price"
+                required
+            >
+
+            <br><br>
+
+            <button type="submit">Add Product</button>
+
+        </form>
+
+        <p id="message"></p>
+
+    </section>
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

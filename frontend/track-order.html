@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Track Order - Mini Store</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">Mini Store</div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart</a>
+            <a href="track-order.html">Track Order</a>
+        </div>
+    </nav>
+
+    <section class="cart-section">
+
+        <h1>Track Your Orders</h1>
+
+        <p>
+            Enter either the email address or phone number
+            you used when placing your order.
+        </p>
+
+        <form id="track-order-form">
+
+            <input
+                type="text"
+                id="tracking-contact"
+                placeholder="Enter Email or Phone Number"
+                required
+            >
+
+            <br><br>
+
+            <button type="submit">
+                Find My Orders
+            </button>
+
+        </form>
+
+        <div id="tracking-result"></div>
+
+    </section>
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
