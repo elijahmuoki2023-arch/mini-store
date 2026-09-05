@@ -5,6 +5,7 @@ const db = require("./db");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
+
 const JWT_SECRET = process.env.JWT_SECRET;
 
 const app = express();
@@ -148,7 +149,7 @@ app.post("/api/admin/login", (req, res) => {
 });
 
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 
 // ==========================================
