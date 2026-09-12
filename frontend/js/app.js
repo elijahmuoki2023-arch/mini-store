@@ -182,7 +182,7 @@ async function loadProducts() {
 
         const response =
             await fetch(
-                "http://192.168.100.13:3000/api/products"
+                "https://mini-store-production-512b.up.railway.app/api/products"
             );
 
         const products =
@@ -275,7 +275,7 @@ if (productForm) {
 
                 const response =
                     await fetch(
-                        "http://192.168.100.13:3000/api/products",
+                        "https://mini-store-production-512b.up.railway.app/api/products",
                         {
                             method: "POST",
 
@@ -384,7 +384,7 @@ if (checkoutForm) {
 
                 const response =
                     await fetch(
-                        "http://192.168.100.13:3000/api/orders",
+                        "https://mini-store-production-512b.up.railway.app/api/orders",
                         {
                             method: "POST",
 
@@ -474,7 +474,7 @@ async function loadOrders() {
 
         const response =
             await fetch(
-                "http://192.168.100.13:3000/api/orders",
+                "https://mini-store-production-512b.up.railway.app/api/orders",
                 {
                     headers: {
                         "Authorization":
@@ -811,7 +811,7 @@ async function updateOrderStatus(
 
         const response =
             await fetch(
-                `http://192.168.100.13:3000/api/orders/${orderId}/status`,
+                `https://mini-store-production-512b.up.railway.app/api/orders/${orderId}/status`,
                 {
                     method: "PUT",
 
@@ -992,7 +992,7 @@ async function loadOrderConfirmation() {
 
         const response =
             await fetch(
-                `http://192.168.100.13:3000/api/orders/${orderId}?email=${encodeURIComponent(email)}`
+                `https://mini-store-production-512b.up.railway.app/api/orders/${orderId}?email=${encodeURIComponent(email)}`
             );
 
         const order =
@@ -1150,7 +1150,7 @@ if (trackOrderForm) {
 
                 const response =
                     await fetch(
-                        "http://192.168.100.13:3000/api/orders/customer",
+                        "https://mini-store-production-512b.up.railway.app/api/orders/customer",
                         {
                             method: "POST",
 
@@ -1317,7 +1317,7 @@ async function trackSelectedOrder(
 
         const response =
             await fetch(
-                `http://192.168.100.13:3000/api/orders/${orderId}?${parameter}`
+                `https://mini-store-production-512b.up.railway.app/api/orders/${orderId}?${parameter}`
             );
 
         const order =
@@ -1593,7 +1593,7 @@ if (contactForm) {
 
                 const response =
                     await fetch(
-                        "http://192.168.100.13:3000/api/contact",
+                        "https://mini-store-production-512b.up.railway.app/api/contact",
                         {
                             method: "POST",
 
@@ -1669,7 +1669,7 @@ async function loadCustomerMessages() {
 
        const response =
     await fetch(
-        "http://192.168.100.13:3000/api/contact",
+        "https://mini-store-production-512b.up.railway.app/api/contact",
         {
             headers: {
                 "Authorization":
@@ -1841,7 +1841,7 @@ if (adminLoginForm) {
 
                 const response =
                     await fetch(
-                        "http://192.168.100.13:3000/api/admin/login",
+                        "https://mini-store-production-512b.up.railway.app/api/admin/login",
                         {
                             method: "POST",
 
